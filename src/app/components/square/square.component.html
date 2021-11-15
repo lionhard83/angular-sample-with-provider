@@ -1,0 +1,18 @@
+<div class="square">
+  <input [(ngModel)]='newItem' />
+
+  <button (click)='addItem()'>Add new item</button>
+  <p *ngFor='let item of arr'>
+    {{item}}
+  </p>
+
+  <!-- <input [(ngModel)]='side' type="number">
+  <div *ngIf='side > 0'>
+    <p>{{side}}</p>
+    <p>{{getArea()}}</p>
+    <p>{{getPerimeter()}}</p>
+  </div>
+  <br>
+  <button (click)='side = side +1 ' >Incrementa side di una unità</button>
+  <button (click)='incrementSide()' >Incrementa side di due unità</button> -->
+</div>
