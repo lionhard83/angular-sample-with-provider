@@ -1,0 +1,12 @@
+<div class="users-container">
+  <p>
+    users-container works! {{indexCurrent}}
+  </p>
+  <app-single-user
+    *ngFor='let userIexim of users; let i=index;'
+    [user]='userIexim'
+    [index]='i'
+    (callFather)='somethingToBeEmited($event)'
+  ></app-single-user>
+</div>
+
